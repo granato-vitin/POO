@@ -24,9 +24,9 @@ constructor(id, nome, senha, dataNascimento, genero){
      }
 }
 
-const user1 = new Usuario(1,"Bruno Koziel","067","2001-67-14T00:00:00",Genero.M);
-const user2 = new Usuario(2,"Lucas Martins","1233","2010-04-14T00:00:00"Genero.M);
+const user1 = new Usuario(1,"Jeol do Santos","253","1989-05-20T00:00:00",Genero.M);
+const user2 = new Usuario(2,"Antony Emanuel","123","2010-04-14T00:00:00"Genero.M);
 console.log(user1)
-user1.nome = "Bruno Koziel"
+user1.nome = "Jeol do Santos"
 console.log(user1.perfil())
 console.log(user2.perfil())
