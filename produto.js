@@ -1,23 +1,27 @@
-console.log("criando classes")
+console.log("Classe Carro")
 
-class Produto{
-    id;
-    nome;
-    ativo;
-    constructor(id,nome){
-        this.id=id;
-        this.nome=nome;
-        this.ativo=true;
+class Carro {
+    constructor(idCarro, nome, cor, disponivel, anoFabricacao) {
+        this.idCarro = idCarro;
+        this.nome = nome;
+        this.cor = cor;
+        this.disponivel = disponivel;
+        this.anoFabricacao = anoFabricacao;
     }
 }
 
-const p1=new Produto(1,"Carregador");
-const p2=new Produto(2,"capinha");
+const carro1 = new Carro(1, "Civic", "Preto", true, 2021);
+const carro2 = new Carro(2, "Corolla", "Branco", false, 2022);
+const carro3 = new Carro(3, "Onix", "Vermelho", true, 2020);
 
-console.log(p1);
-p1.nome="Carregador Iphone";
-console.log(p1);
-console.log(p2);
-p2.ativo=false;
-console.log(p2);
-console.log("Nome Produto: " + p2.nome + " - status:" + p2.ativo)
+console.log("--- Objetos Criados ---");
+console.log(carro1);
+console.log(carro2);
+console.log(carro3);
+
+carro1.cor = "Cinza";
+carro2.disponivel = true;
+
+console.log("\n--- Objetos Atualizados ---");
+console.log(carro1);
+console.log(carro2);
